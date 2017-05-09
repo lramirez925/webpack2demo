@@ -3,7 +3,9 @@ var webpack = require("webpack");
 var less  = require("less-loader");
 
 module.exports = {
-    entry: './app/vendor.js',
+    entry: {
+        vendor:'./app/vendor.js'
+    },
     output: {
         filename:'[name].js',
         path: path.resolve(__dirname,'dist'),
